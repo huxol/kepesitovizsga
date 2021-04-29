@@ -38,7 +38,8 @@ class MilitaryUnitTest {
 
     @Test
     void testSwordsmanUnarmored() {
-        Swordsman swordsman = new Swordsman(false);
+        Swordsman swordsman;
+        swordsman = new Swordsman(false);
         swordsman.sufferDamage(20);
         assertEquals(100, swordsman.getHitPoints());
         swordsman.sufferDamage(20);
